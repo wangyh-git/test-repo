@@ -48,7 +48,7 @@ nav a {
     transition: background-color 0.3s;
 }
 
-nav a:hover {
+nav a:hover, nav a.active {
     background-color: rgba(255,255,255,0.2);
 }
 
@@ -92,6 +92,7 @@ nav a:hover {
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s;
+    cursor: pointer;
 }
 
 .feature-card:hover {
@@ -105,6 +106,89 @@ nav a:hover {
 
 .feature-card p {
     color: #666;
+}
+
+/* 目的地页面样式 */
+.destinations-hero {
+    height: 400px;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://picsum.photos/1920/400?random=5');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.destinations-hero h2 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.destinations-grid {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    background-color: white;
+}
+
+.destination-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.destination-card:hover {
+    transform: translateY(-5px);
+}
+
+.destination-image {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.destination-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: white;
+}
+
+.destination-overlay h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.destination-info {
+    padding: 1.5rem;
+}
+
+.destination-info p {
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.btn-details {
+    background-color: #00b894;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-details:hover {
+    background-color: #00a884;
 }
 
 /* 页脚样式 */
@@ -129,5 +213,9 @@ footer {
     
     .hero p {
         font-size: 1.2rem;
+    }
+
+    .destinations-grid {
+        grid-template-columns: 1fr;
     }
 }
