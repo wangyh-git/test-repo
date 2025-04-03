@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎来到旅游天地</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            height: 500px;
+            background-image: url('https://picsum.photos/1920/500');
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .features {
+            padding: 3rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            padding: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>旅游天地</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">首页</a></li>
+            <li><a href="#destinations">目的地</a></li>
+            <li><a href="#tours">旅游路线</a></li>
+            <li><a href="#hotels">酒店预订</a></li>
+            <li><a href="#about">关于我们</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <div>
+            <h2>探索世界的每个角落</h2>
+            <p>让我们为您打造难忘的旅行体验</p>
+        </div>
+    </div>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>特色目的地</h3>
+            <p>精选全球最受欢迎的旅游胜地</p>
+        </div>
+        <div class="feature-card">
+            <h3>专业导游</h3>
+            <p>经验丰富的导游团队为您服务</p>
+        </div>
+        <div class="feature-card">
+            <h3>优质住宿</h3>
+            <p>精选舒适安全的住宿选择</p>
+        </div>
+        <div class="feature-card">
+            <h3>特色体验</h3>
+            <p>独特的当地文化体验活动</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>版权所有 © 2024 旅游天地 | 联系电话：123-456-7890 | 邮箱：info@travel.com</p>
+    </footer>
+</body>
+</html>
